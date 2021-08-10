@@ -6,6 +6,8 @@ $mediumGray: #edeff1;
 $darkGray: #627785;
 $blue: #2d41f5;
 $lightGray: #e7e9ec;
+$gray10: #a5a5a5;
+$gray20: #3f474e;
 $font: 500 1.56rem/1.8rem "Roboto", sans-serif;
 
 :root {
@@ -18,4 +20,6 @@ $font: 500 1.56rem/1.8rem "Roboto", sans-serif;
   --mediumGray: #{$mediumGray};
   --white: #{$white};
   --lightGray: #{$lightGray};
+  --gray10: #{$gray10};
+  --gray20: #{$gray20};
 }

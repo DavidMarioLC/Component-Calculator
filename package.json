@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "sass": "^1.37.5",
+    "sass-migrator": "^1.5.1",
     "vite": "^2.4.4"
   }
 }
