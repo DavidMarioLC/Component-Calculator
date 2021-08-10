@@ -6,11 +6,16 @@
   border: 1px solid rgba(254, 254, 254, 1);
   border-radius: 1.25rem;
   background-color: $mediumGray;
-}
 
-.calculator__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 1rem;
+  &__display {
+    border: 1px solid black;
+    padding: pxToRem(16) pxToRem(8);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+  }
 }
