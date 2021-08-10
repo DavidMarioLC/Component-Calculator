@@ -1,0 +1,44 @@
+.button {
+  font: $font;
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px #dee0e3, -4px -4px 5px #ffffff;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.button--white {
+  color: $darkGray;
+  background: $white;
+}
+
+.button--orange {
+  color: $white;
+  background: $orange;
+}
+
+.button--cream {
+  color: $darkGray;
+  background: $lightYellow;
+}
+
+.button--lightblue {
+  color: $blue;
+  background: $lightPurple;
+}
+
+.button--blue {
+  color: $white;
+  background: $blue;
+}
+
+.button--gray {
+  color: $darkGray;
+  background: $lightGray;
+}

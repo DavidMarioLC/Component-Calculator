@@ -1,0 +1,21 @@
+$orange: #fe9505;
+$white: #f1f3f5;
+$lightYellow: #f5f0e3;
+$lightPurple: #d5d6e9;
+$mediumGray: #edeff1;
+$darkGray: #627785;
+$blue: #2d41f5;
+$lightGray: #e7e9ec;
+$font: 500 1.56rem/1.8rem "Roboto", sans-serif;
+
+:root {
+  --fontbase: #{$font};
+  --orange: #{$orange};
+  --lightYellow: #{$lightYellow};
+  --lightPurple: #{$lightPurple};
+  --blue: #{$blue};
+  --darkgray: #{$darkGray};
+  --mediumGray: #{$mediumGray};
+  --white: #{$white};
+  --lightGray: #{$lightGray};
+}

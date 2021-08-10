@@ -1,0 +1,13 @@
+{
+  "name": "portafolio-calculator",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.37.5",
+    "vite": "^2.4.4"
+  }
+}
