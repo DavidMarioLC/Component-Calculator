@@ -1,44 +1,30 @@
 const displayNumber = document.querySelector(".calculator__number");
-const actions = document.querySelectorAll("[data-action]");
+
+const reset = document.querySelector("[data-action='reset']");
+const negacion = document.querySelector("[data-action='negacion']");
+const porcentaje = document.querySelector("[data-action='porcentaje']");
+const dividir = document.querySelector("[data-action='dividir']");
+const multiplicar = document.querySelector("[data-action='multiplicar']");
+const restar = document.querySelector("[data-action='restar']");
+const sumar = document.querySelector("[data-action='sumar']");
+const igual = document.querySelector("[data-action='igual']");
+
 const numbers = document.querySelectorAll("[data-number]");
 
-let operation = null;
-let firstNumber = 0;
-let secondNumber = 0;
+let operation = "";
+let firstNumber = null;
+let secondNumber = null;
 let result = 0;
 
-function chooseAction() {
-  operation = this.dataset.action;
-  displayNumber.textContent = "0";
-}
-
-function getNumber() {
+function setNumber() {
   firstNumber = parseInt(this.dataset.number);
-  displayNumber.textContent = firstNumber;
-  console.log(firstNumber);
-}
 
-function optionActions() {
-  switch (operation) {
-    case "suma":
-      result = firstNumber + secondNumber;
-      console.log(result);
-      displayNumber.textContent = result;
-
-      break;
-    case "resta":
-      result = firstNumber - secondNumber;
-      displayNumber.textContent = result;
-      break;
-
-    default:
-      break;
+  if (firstNumber !== null) {
+    displayNumber.textContent = firstNumber;
+  } else {
+    displayNumber.textContent = "0";
   }
+  console.log();
 }
 
-function solution() {
-  optionActions();
-}
-
-actions.forEach((action) => action.addEventListener("click", chooseAction));
-numbers.forEach((number) => number.addEventListener("click", getNumber));
+numbers.forEach((number) => number.addEventListener("click", setNumber));
